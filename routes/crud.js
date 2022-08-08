@@ -15,7 +15,7 @@ router.post("/create", async(req, res) => {
     res.json(data);
 })
 
-//getAll 
+//getAll list
 router.get("/list", async(req, res) => {
     var fetchList = await EmployeeRouter.find();
     res.json(fetchList);
